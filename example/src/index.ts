@@ -31,7 +31,9 @@ async function main() {
     
     outbox.dispatch({
       "order.created": async function (event, ctx) {
-        console.log("Sending webhook for order", event);
+          await ctx.runOnce(async ()=>{
+            console.log("Sending webhook for order", event);
+          })
       },
     });
 

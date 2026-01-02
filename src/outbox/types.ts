@@ -6,5 +6,7 @@ export type RunOnce = (fn:()=> Promise<void>) => Promise<void>
 
 export type EventHandler<T=any> = (
   event: OutboxEvent<T>,
-  ctx: RunOnce
+  ctx: {
+    runOnce:RunOnce
+  }
 ) => Promise<void>;
