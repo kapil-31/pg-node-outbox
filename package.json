@@ -12,11 +12,17 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kapil-31/pg-node-outbox"
+  },
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
 
   },
+  "homepage": "https://github.com/kapil-31/node-outbox#readme",
+
   "keywords": [
     "node-outbox"
   ],
