@@ -1,5 +1,5 @@
 {
-   "name": "node-outbox",
+   "name": "pg-node-outbox",
   "version": "1.0.0",
   "description": "",
   "author": "kapil karki",
